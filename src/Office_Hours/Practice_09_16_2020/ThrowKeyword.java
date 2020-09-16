@@ -9,4 +9,16 @@ public class ThrowKeyword {
 
         System.out.println("Test started on: "+browser+" browser");
     }
+    public  void method1() throws ClassNotFoundException {
+        throw new ClassNotFoundException();
+    }
+
+    public  void method2() throws CloneNotSupportedException {
+        throw new CloneNotSupportedException();
+    }
+    public void method3() throws ClassNotFoundException, CloneNotSupportedException {
+        method1();
+        method2();
+    }
+
 }
