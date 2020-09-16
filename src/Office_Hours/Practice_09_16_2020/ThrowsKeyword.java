@@ -22,8 +22,12 @@ public class ThrowsKeyword {
       */
     }
 
-    public void methodA()throws InterruptedException{
+    public void methodA()throws InterruptedException{//declared that method throes an exception
         Thread.sleep(3000);
+    }
+
+    public void methodB() throws InterruptedException {
+        methodA();
     }
 
 }
