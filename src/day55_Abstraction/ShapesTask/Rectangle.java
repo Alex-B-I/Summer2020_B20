@@ -21,11 +21,10 @@ public class Rectangle extends Shape {
         area = calculateArea();
         perimeter =calculatePerimeter();
         volume = calculateVolume();
-    }
-    static {
         name = "Rectangle";
         hasVolume = false;
     }
+    //static {}
 
     @Override
     public double calculateArea() {
