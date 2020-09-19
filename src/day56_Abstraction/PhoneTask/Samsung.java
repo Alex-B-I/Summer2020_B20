@@ -1,9 +1,13 @@
 package day56_Abstraction.PhoneTask;
 
-public class Samsung extends Phohe{
+public final class Samsung extends Phohe{
 
     public Samsung(String model, double price, String size) {
         super("Samsung",model, price, size);
+        if(price<=0 || price>1200){
+            throw new RuntimeException("Invalid Price: "+price);
+        }
+
     }
 
     @Override
@@ -14,6 +18,10 @@ public class Samsung extends Phohe{
     @Override
     public void texting(long phoneNumber) {
         System.out.println("Samsung is texting to "+phoneNumber);
+    }
+
+    public void freezing(){
+        System.out.println("Samsung is freezing");
     }
 
     @Override
