@@ -1,6 +1,12 @@
 package day56_Abstraction.PhoneTask;
-
-public final class Iphone extends Phohe {
+/*
+2. create the following subclasses of phone:
+                        1. IPhone
+                        2. Samsung
+            create constructors in each sub class that can initialize the instance variables
+            if the price of iPhone or Samsung set to 0 or negative, program should throw an exception during runtime with an error message of "Invalid Price"
+ */
+public final class Iphone extends Phone {
 
     public Iphone(String model, double price, String size) {
         super("iPhone", model, price, size);
@@ -51,7 +57,7 @@ public final class Iphone extends Phohe {
      */
 
     public void faceTiming(long phoneNumber){//only unique for iPhone
-        System.out.println("iPhone is facetiming with "+phoneNumber);
+        System.out.println("iPhone is face timing with "+phoneNumber);
     }
     public void faceTiming(long num1, long num2){//only unique for iPhone
         faceTiming(num1);

@@ -7,7 +7,7 @@ package day56_Abstraction.PhoneTask;
             add a constructor that can initialize all the instances
 
  */
-public abstract class Phohe {
+public abstract class Phone {
 
     public String brand;
     public String model;
@@ -21,7 +21,7 @@ public abstract class Phohe {
 
     @Override
     public String toString() {
-        return "Phohe{" +
+        return "Phone{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", price=" + price +
@@ -29,7 +29,7 @@ public abstract class Phohe {
                 '}';
     }
 
-    public Phohe(String brand, String model, double price, String size) {
+    public Phone(String brand, String model, double price, String size) {
         this.brand = brand;
         this.model = model;
         this.price = price;
