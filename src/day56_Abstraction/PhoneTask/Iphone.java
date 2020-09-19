@@ -17,8 +17,20 @@ public final class Iphone extends Phohe {
     }
 
     @Override
+    public void calling(long num1, long num2) {
+        calling(num1);
+        calling(num2);
+    }
+
+    @Override
     public void texting(long phoneNumber) {
         System.out.println("iPhone is texting "+phoneNumber);
+    }
+
+    @Override
+    public void texting(long num1, long num2) {
+        texting(num1);
+        texting(num2);
     }
 
     @Override
@@ -30,4 +42,21 @@ public final class Iphone extends Phohe {
                 ", size='" + size + '\'' +
                 '}';
     }
+    /*
+    @Override
+    public String toString() {
+        return "Iphone" + super.toString();
+    }
+
+     */
+
+    public void faceTiming(long phoneNumber){//only unique for iPhone
+        System.out.println("iPhone is facetiming with "+phoneNumber);
+    }
+    public void faceTiming(long num1, long num2){//only unique for iPhone
+        faceTiming(num1);
+        faceTiming(num2);
+    }
+
+
 }
