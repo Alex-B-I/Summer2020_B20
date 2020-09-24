@@ -1,4 +1,4 @@
-package day57_Polymorphism;
+package day57_Polymorphism.PhoneTask;
 
 public class Huawei extends Phone implements AndroidApp, AppleApp, Downloadable {
 

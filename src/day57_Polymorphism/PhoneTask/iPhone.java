@@ -1,4 +1,4 @@
-package day57_Polymorphism;
+package day57_Polymorphism.PhoneTask;
 
 /*
  5. create a class named iPhone that can inherit from AppleApp and Phone
