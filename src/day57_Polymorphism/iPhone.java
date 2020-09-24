@@ -9,7 +9,7 @@ package day57_Polymorphism;
  */
     public class iPhone extends Phone implements AppleApp, Downloadable{
 
-        public iPhone(String brand, String model, double price, String size) {
+        public iPhone(String model,String size, double price ) {
             super("iPhone", model, price, size);
             if(price>1500){
                 throw new RuntimeException("Invalid Price, Iphone' price cannot more than 1500");
@@ -36,7 +36,7 @@ package day57_Polymorphism;
         return "iPhone{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
-                ", price=$" + price +
+                ", price=$ " + price +
                 ", size='" + size + '\'' +
                 '}';
     }
