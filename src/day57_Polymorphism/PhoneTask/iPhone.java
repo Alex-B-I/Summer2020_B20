@@ -30,6 +30,9 @@ package day57_Polymorphism.PhoneTask;
         public void download() {
             System.out.println("iPhone is downloading app from "+AppStoreName);
         }
+    public void faceTiming(long phoneNumber){
+        System.out.println("Iphone is facetiming "+phoneNumber);
+    }
 
     @Override
     public String toString() {
