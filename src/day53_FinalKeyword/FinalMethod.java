@@ -25,7 +25,7 @@ public class FinalMethod extends A{
     }
 
  */
-public final static void main(String[] args) {
+public final static void dd() {
     System.out.println("Hello");
 }
 
