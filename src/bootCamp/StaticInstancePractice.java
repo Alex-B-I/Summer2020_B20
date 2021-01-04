@@ -6,11 +6,23 @@ class Person{
   static: isHuman, numberOfEyes
      */
     public String name;
-    public String age;
-    public String gender;
+    public int age;
+    public char gender;
 
-    public static boolean isHuman = true;
-    public static int numberOfEyes = 2;
+
+    public Person(String name, int age, char gender){
+        this.name = name;
+        this.age=age;
+        this.gender = gender;
+    }
+
+    public static boolean isHuman;
+    public static int numberOfEyes;
+
+    static {
+        isHuman = true;
+        numberOfEyes = 2;
+    }
 
     public void printName(){
         System.out.println(name);
@@ -23,10 +35,10 @@ class Person{
 public class StaticInstancePractice {
     public static void main(String[] args) {
 
-        Person person1 = new Person();
+        Person person1 = new Person("Musa",27,'M');
         person1.name = "Musa";
 
-        Person person2 = new Person();
+        Person person2 = new Person("Mike",28,'M');
         person2.name = "Mike";
         // person2.numberOfEyes=3;
 
